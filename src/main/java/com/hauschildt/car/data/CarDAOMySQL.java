@@ -97,6 +97,8 @@ public class CarDAOMySQL implements CarDAO {
             callableStatement.setInt(4, car.getModelYear());
 
             callableStatement.execute();
+            callableStatement.close();
+            conn.close();
 
         } catch(SQLException ex){
             throw new CarDataException(ex);
@@ -131,7 +133,8 @@ public class CarDAOMySQL implements CarDAO {
                 modelYear = resultSet.getInt("Model_Year");
                 car = new Car(licensePlate, make, model, modelYear);
             }
-
+            callableStatement.close();
+            conn.close();
 
         } catch(SQLException ex){
             throw new CarDataException(ex);
@@ -174,7 +177,8 @@ public class CarDAOMySQL implements CarDAO {
             callableStatement.setInt(5, updated.getModelYear());
 
             callableStatement.execute();
-
+            callableStatement.close();
+            conn.close();
         } catch(SQLException ex){
             throw new CarDataException(ex);
         }
@@ -208,7 +212,8 @@ public class CarDAOMySQL implements CarDAO {
                     = conn.prepareCall("CALL sp_delete_from_Car2(?);");
             callableStatement.setString(1, licensePlateToDelete);
             callableStatement.execute();
-
+            callableStatement.close();
+            conn.close();
         } catch(SQLException ex){
             throw new CarDataException(ex);
         }
