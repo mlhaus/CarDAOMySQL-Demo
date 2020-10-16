@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="15" failures="0" name="com.hauschildt.car.CarTest" time="0.153" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.2+12-46"/>
+    <property name="sun.boot.library.path" value="/Users/marchauschildt/Library/Java/JavaVirtualMachines/openjdk-14.0.2/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/marchauschildt/Dropbox/Kirkwood/Java2/CarDataProject/CarDataProject"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/marchauschildt/Dropbox/Kirkwood/Java2/CarDataProject/CarDataProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="14.0.2+12-46"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/r6/bgqzyr2n38l6_lt4p92nhb180000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="maven.ext.class.path" value="/Applications/NetBeans/Apache NetBeans 11.3.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="/Applications/NetBeans/Apache NetBeans 11.3.app/Contents/Resources/NetBeans/netbeans/java/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/marchauschildt/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/marchauschildt"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="marchauschildt"/>
+    <property name="java.class.path" value="/Applications/NetBeans/Apache NetBeans 11.3.app/Contents/Resources/NetBeans/netbeans/java/maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/Apache NetBeans 11.3.app/Contents/Resources/NetBeans/netbeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.home" value="/Users/marchauschildt/Library/Java/JavaVirtualMachines/openjdk-14.0.2/Contents/Home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Applications/NetBeans/Apache NetBeans 11.3.app/Contents/Resources/NetBeans/netbeans/java/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testGetLicensePlate" time="0.087"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testSetLicensePlate" time="0"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testGetMake" time="0.006"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testSetMake" time="0.001"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testGetModel" time="0"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testSetModel" time="0"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testGetModelYear" time="0.001"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testSetModelYearGoodArbitrary" time="0"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testSetModelYearGoodMinimum" time="0.001"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testSetModelYearBad1892" time="0.004"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testGetHighestAllowedModelYear" time="0.001"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testToString" time="0.051"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testCompareToSorted" time="0"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testCompareToUnsorted" time="0.001"/>
+  <testcase classname="com.hauschildt.car.CarTest" name="com.hauschildt.car.CarTest.testCompareToEqual" time="0"/>
+</testsuite>
