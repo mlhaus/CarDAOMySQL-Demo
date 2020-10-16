@@ -115,27 +115,27 @@ public class CarDAOMySQL implements CarDAO {
             }
         }
         // Use this code if you want to look the car up from a database query
-//        try{
-//            Connection conn = buildConnection();
-//            CallableStatement callableStatement
-//                    = conn.prepareCall("CALL sp_get_Car_by_License_Plate(?);");
-//            callableStatement.setString(1, licensePlate);
-//
-//            ResultSet resultSet = callableStatement.executeQuery();
-//            String make;
-//            String model;
-//            int modelYear;
-//            if(resultSet.next()){
-//                make = resultSet.getString("Make");
-//                model = resultSet.getString("Model");
-//                modelYear = resultSet.getInt("Model_Year");
-//                car = new Car(licensePlate, make, model, modelYear);
-//            }
-//
-//
-//        } catch(SQLException ex){
-//            throw new CarDataException(ex);
-//        }
+        try{
+            Connection conn = buildConnection();
+            CallableStatement callableStatement
+                    = conn.prepareCall("CALL sp_get_Car_by_License_Plate(?);");
+            callableStatement.setString(1, licensePlate);
+
+            ResultSet resultSet = callableStatement.executeQuery();
+            String make;
+            String model;
+            int modelYear;
+            if(resultSet.next()){
+                make = resultSet.getString("Make");
+                model = resultSet.getString("Model");
+                modelYear = resultSet.getInt("Model_Year");
+                car = new Car(licensePlate, make, model, modelYear);
+            }
+
+
+        } catch(SQLException ex){
+            throw new CarDataException(ex);
+        }
         return car;
     }
 
